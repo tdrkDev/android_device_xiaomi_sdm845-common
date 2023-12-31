@@ -418,6 +418,10 @@ on post-fs-data
 
     start vendor.qcrild
     start vendor.qcrild2
+    
+    # Dolby
+    mkdir /data/vendor/dolby 0770 media media
+    mkdir /data/vendor/multimedia 0775 system system
 
     # Create directories for fingerprint
     mkdir /data/vendor/fpc 0770 system system
